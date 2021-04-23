@@ -17,7 +17,7 @@ Contains all the historical data for each state from the start of the pandemic.
 ***
 
 ## Direct APK download Link
-<a href="https://github.com/imsudip/covid19_Tracker/raw/main/Covid19%20Tracker_1.1.0.apk" title="Apk Icon #148754"><img src="https://icon-library.net//images/apk-icon/apk-icon-1.jpg" width="100" />Download</a>
+<a href="https://github.com/imsudip/covid19_Tracker/raw/main/Covid19%20Tracker_1.1.0.apk" title="Download now"><img src="https://icon-library.net//images/apk-icon/apk-icon-1.jpg" width="100" />Download</a>
 ***
 
 
