@@ -15,7 +15,10 @@ Contains all the historical data for each state from the start of the pandemic.
 
 
 ***
+## Website built with Flutter web
 
+Fully responsive UI.
+Checkout the Website [here](https://imsudip.github.io/covid19_Tracker/#/)
 ## Direct APK download Link
 <a href="https://github.com/imsudip/covid19_Tracker/raw/main/Covid19%20Tracker_1.1.0.apk" title="Download now"><img src="https://icon-library.net//images/apk-icon/apk-icon-1.jpg" width="100" />Download</a>
 ***
