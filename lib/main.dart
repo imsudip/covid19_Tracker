@@ -97,10 +97,10 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       child: Row(
         children: <Widget>[
-          Image.network("/assets/icons/maps-and-flags.svg"),
+          Image.network("/assets/assets/icons/maps-and-flags.svg"),
           SizedBox(width: 20),
           Expanded(child: Text(selectedKey)),
-          Image.network("/assets/icons/dropdown.svg")
+          Image.network("/assets/assets/icons/dropdown.svg")
         ],
       ),
     );
@@ -277,7 +277,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   const EdgeInsets.symmetric(vertical: 0.0, horizontal: 16),
               child: Row(
                 children: [
-                  Image.network("/assets/icons/maps-and-flags.svg"),
+                  Image.network("/assets/assets/icons/maps-and-flags.svg"),
                   30.widthBox,
                   Expanded(
                     child: Text(
@@ -354,7 +354,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Column(
         children: <Widget>[
           MyHeader(
-            image: "/assets/images/fight.svg",
+            image: "/assets/assets/images/fight.svg",
             textTop: "All you need  is to",
             textBottom: "stay at home.",
             offset: offset,

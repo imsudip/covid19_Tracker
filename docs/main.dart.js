@@ -43510,7 +43510,7 @@ q.aR(new F.ad4())
 return P.a8(null,r)}})
 return P.a9($async$qA,r)},
 a2:function(a,b){var s=null,r=K.iM(50),q=F.akc(new P.i(4293256677),1)
-return M.alb(new A.j0(new F.ada(this,M.av(s,T.eP(H.c([U.a06("/assets/icons/maps-and-flags.svg",C.N,s,s),T.b4(s,s,20),T.fz(L.e9(this.f,s,s,s,s,s,s,s,s,s,s,s),1,s),U.a06("/assets/icons/dropdown.svg",C.N,s,s)],t.X),C.F,s,C.D,C.z),C.k,s,s,new S.cx(C.j,s,q,r,s,s,C.J),s,50,s,s,new V.aI(20,10,20,10),s,s,1/0)),s))},
+return M.alb(new A.j0(new F.ada(this,M.av(s,T.eP(H.c([U.a06("/assets/assets/icons/maps-and-flags.svg",C.N,s,s),T.b4(s,s,20),T.fz(L.e9(this.f,s,s,s,s,s,s,s,s,s,s,s),1,s),U.a06("/assets/assets/icons/dropdown.svg",C.N,s,s)],t.X),C.F,s,C.D,C.z),C.k,s,s,new S.cx(C.j,s,q,r,s,s,C.J),s,50,s,s,new V.aI(20,10,20,10),s,s,1/0)),s))},
 ag3:function(a,b){var s,r,q=this,p=null,o=H.c([new P.i(4281566157),new P.i(4279313567)],t.it),n=X.Xl(new L.jT("assets/images/virus.png",p,p)),m=t.w,l=b.au(m).f,k=$.avC()
 $.anv().toString
 s=t.X
@@ -43568,7 +43568,7 @@ n=n[D.kg(n)].b
 m=l.y.b
 return M.av(k,T.d1(H.c([j,s,r,l.aeQ(p.e,p.a,o.e,n.a,m[D.kg(m)].b.d,p.d,"India",q)],t.X),C.F,k,C.D,C.z),C.k,k,k,k,k,k,k,k,k,k,k,k)},
 Kl:function(a){return this.Km(a,!1)},
-adX:function(a,b){var s=this,r=null,q=E.akZ(300,"/assets/images/fight.svg",!1,s.e,"stay at home.","All you need  is to"),p=s.x!=null&&s.y!=null?T.d1(H.c([s.Kl(b),T.b4(r,20,r),s.BP(b,a)],t.X),C.F,r,C.D,C.z):M.av(r,T.vt(U.aki(4,r),r,r,r),C.k,r,r,r,r,60,r,r,r,r,r,r),o=T.b4(r,20,r),n=L.hv("Know More")
+adX:function(a,b){var s=this,r=null,q=E.akZ(300,"/assets/assets/images/fight.svg",!1,s.e,"stay at home.","All you need  is to"),p=s.x!=null&&s.y!=null?T.d1(H.c([s.Kl(b),T.b4(r,20,r),s.BP(b,a)],t.X),C.F,r,C.D,C.z):M.av(r,T.vt(U.aki(4,r),r,r,r),C.k,r,r,r,r,60,r,r,r,r,r,r),o=T.b4(r,20,r),n=L.hv("Know More")
 n.d=24
 n.ch=C.bi
 n.f=0.8
@@ -43628,7 +43628,7 @@ $1:function(a){return new D.m6(null)},
 $S:134}
 F.ad7.prototype={
 $1:function(a){var s=null
-return M.av(C.xn,T.eP(H.c([U.a06("/assets/icons/maps-and-flags.svg",C.N,s,s),T.b4(s,s,30),T.fz(L.e9(a,s,s,s,C.mV,s,s,s,s,s,s,s),1,s)],t.X),C.F,s,C.D,C.z),C.k,s,s,s,s,40,s,s,C.tr,s,s,s)},
+return M.av(C.xn,T.eP(H.c([U.a06("/assets/assets/icons/maps-and-flags.svg",C.N,s,s),T.b4(s,s,30),T.fz(L.e9(a,s,s,s,C.mV,s,s,s,s,s,s,s),1,s)],t.X),C.F,s,C.D,C.z),C.k,s,s,s,s,40,s,s,C.tr,s,s,s)},
 $S:164}
 F.ad8.prototype={
 $1:function(a){var s=this.a
