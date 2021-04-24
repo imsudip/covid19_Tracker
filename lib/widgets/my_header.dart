@@ -64,7 +64,7 @@ class _MyHeaderState extends State<MyHeader> {
                             fit: BoxFit.fill,
                             alignment: Alignment.topCenter,
                           )
-                        : SvgPicture.asset(
+                        : Image.network(
                             widget.image,
                             width: context.percentWidth * 40,
                             //height: context.percentHeight * 40,

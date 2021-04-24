@@ -97,10 +97,10 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       child: Row(
         children: <Widget>[
-          SvgPicture.asset("assets/icons/maps-and-flags.svg"),
+          Image.network("/assets/icons/maps-and-flags.svg"),
           SizedBox(width: 20),
           Expanded(child: Text(selectedKey)),
-          SvgPicture.asset("assets/icons/dropdown.svg")
+          Image.network("/assets/icons/dropdown.svg")
         ],
       ),
     );
@@ -277,7 +277,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   const EdgeInsets.symmetric(vertical: 0.0, horizontal: 16),
               child: Row(
                 children: [
-                  SvgPicture.asset("assets/icons/maps-and-flags.svg"),
+                  Image.network("/assets/icons/maps-and-flags.svg"),
                   30.widthBox,
                   Expanded(
                     child: Text(
@@ -326,8 +326,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Container _indiaCard(BuildContext context, {bool isweb = false}) {
     return Container(
       child: Column(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           "India".text.size(24).semiBold.letterSpacing(0.8).make(),
           20.heightBox,
@@ -356,7 +354,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Column(
         children: <Widget>[
           MyHeader(
-            image: "assets/images/fight.svg",
+            image: "/assets/images/fight.svg",
             textTop: "All you need  is to",
             textBottom: "stay at home.",
             offset: offset,
@@ -364,13 +362,9 @@ class _HomeScreenState extends State<HomeScreen> {
           latestData != null && historyData != null
               ? Column(
                   children: [
-                    Column(
-                      children: [
-                        _indiaCard(context),
-                        20.heightBox,
-                        _stateCard(context, normalChildButton)
-                      ],
-                    ),
+                    _indiaCard(context),
+                    20.heightBox,
+                    _stateCard(context, normalChildButton),
                   ],
                 )
               : Container(
