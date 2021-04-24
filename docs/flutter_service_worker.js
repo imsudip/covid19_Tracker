@@ -24,9 +24,11 @@ const RESOURCES = {
 "assets/NOTICES": "373be0d8728acc5d3202e28c0db7e2a7",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "favicon.png": "7eaa14e1032128642283386a1edee2a3",
-"index.html": "84dfc859ccc7f235797703d8313a6f45",
-"/": "84dfc859ccc7f235797703d8313a6f45",
-"main.dart.js": "14ae0678aa3103417b79c530528a48de",
+"icons/icon-192.png": "fa752fb00a58a1f8fcb45b649863ba47",
+"icons/icon-512.png": "63e0954c0d511272ffb958ff6a94f3af",
+"index.html": "6cba38cd1fc9212764156fbc442b0584",
+"/": "6cba38cd1fc9212764156fbc442b0584",
+"main.dart.js": "8e3962447319b576c3292939945fa235",
 "manifest.json": "2e8d095c42bf7e2beecd92a1f18c9be0",
 "version.json": "a86e24c3acbb254109b3518c8528ec45"
 };
