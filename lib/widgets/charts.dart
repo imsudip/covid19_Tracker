@@ -9,10 +9,12 @@ import 'package:syncfusion_flutter_core/theme.dart';
 
 class ChartView extends StatefulWidget {
   final History history;
+
   // final int stateIndex;
-  final bool isState;
+  final bool isState, isWeb;
   final String stateName;
-  ChartView({Key key, this.history, this.isState = false, this.stateName})
+  ChartView(
+      {Key key, this.history, this.isState = false, this.stateName, this.isWeb})
       : super(key: key);
 
   @override
@@ -43,7 +45,9 @@ class _ChartViewState extends State<ChartView> {
     return Column(
       children: [
         Container(
-            height: context.percentHeight * 40,
+            height: widget.isWeb
+                ? context.percentHeight * 65
+                : context.percentHeight * 48,
             child: _buildDefaultPanningChart(yearList).px(10)),
         "Isolate particualar section".text.make(),
         _yearRangeSlider().px(30)
@@ -92,7 +96,8 @@ class _ChartViewState extends State<ChartView> {
 
       primaryXAxis: DateTimeAxis(
           majorGridLines: MajorGridLines(width: 0),
-          interval: 2.5,
+          // interval: 2.5,
+          intervalType: DateTimeIntervalType.days,
           rangePadding: ChartRangePadding.auto,
           associatedAxisName: "date"),
       primaryYAxis: NumericAxis(

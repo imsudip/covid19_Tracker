@@ -32,6 +32,7 @@ dependencies:
   syncfusion_flutter_sliders: ^19.1.57-beta
   extended_image: ^4.0.1
   velocity_x: ^3.0.0
+  url_launcher: ^6.0.3
 
 dev_dependencies:
   flutter_test:

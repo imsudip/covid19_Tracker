@@ -37,76 +37,217 @@ class _InfoScreenState extends State<InfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        controller: controller,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            MyHeader(
-              image: "https://i.ibb.co/7z3D8RX/doctor2.png",
-              isImage: true,
-              textTop: "Get to know",
-              textBottom: "About Covid-19.",
-              offset: offset,
+      body: LayoutBuilder(builder: (context, dimen) {
+        if (dimen.maxWidth > 650) {
+          return webView();
+        }
+        return movileView();
+      }),
+    );
+  }
+
+  Widget webView() {
+    return Row(
+      children: [
+        Hero(
+          tag: "sidebar",
+          child: Material(
+            child: Container(
+              width: 300,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomLeft,
+                  colors: [
+                    Color(0xFF3383CD),
+                    Color(0xFF11249F),
+                  ],
+                ),
+                image: DecorationImage(
+                  image: AssetImage("assets/images/virus.png"),
+                ),
+              ),
+              child: Stack(
+                children: [
+                  Positioned(
+                      bottom: 30,
+                      left: 60,
+                      child: ExtendedImage.network(
+                        "https://i.ibb.co/7z3D8RX/doctor2.png",
+                        width: 150,
+                        fit: BoxFit.fitWidth,
+                        alignment: Alignment.topCenter,
+                      )),
+                  Positioned(
+                    top: 40,
+                    right: 20,
+                    child: Text(
+                      "Get to know\nAbout Covid-19.",
+                      textAlign: TextAlign.right,
+                      style: kHeadingTextStyle.copyWith(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
+          ),
+        ),
+        Flexible(
+            child: Container(
+          child: Scrollbar(
+            controller: controller,
+            child: SingleChildScrollView(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(Icons.arrow_back).onTap(() {
+                        context.pop();
+                      }),
+                      "Know More".text.size(16).blueGray400.make(),
+                    ],
+                  ).px(20).py(8),
+                  26.heightBox,
                   Text(
                     "Symptoms",
                     style: kTitleTextstyle,
                   ),
                   SizedBox(height: 20),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      SymptomCard(
-                        image: "assets/images/headache.png",
-                        title: "Headache",
-                        isActive: true,
-                      ).expand(),
-                      8.widthBox,
-                      SymptomCard(
-                        image: "assets/images/caugh.png",
-                        title: "Caugh",
-                      ).expand(),
-                      8.widthBox,
-                      SymptomCard(
-                        image: "assets/images/fever.png",
-                        title: "Fever",
-                      ).expand(),
-                    ],
+                  Container(
+                    constraints: BoxConstraints(maxWidth: 500),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        SymptomCard(
+                          image: "assets/images/headache.png",
+                          title: "Headache",
+                          isActive: true,
+                        ).expand(),
+                        8.widthBox,
+                        SymptomCard(
+                          image: "assets/images/caugh.png",
+                          title: "Caugh",
+                        ).expand(),
+                        8.widthBox,
+                        SymptomCard(
+                          image: "assets/images/fever.png",
+                          title: "Fever",
+                        ).expand(),
+                      ],
+                    ),
                   ),
                   SizedBox(height: 20),
                   Text("Prevention", style: kTitleTextstyle),
                   SizedBox(height: 20),
-                  ExtendedImage.network(
-                    "https://i.ibb.co/bswZCTK/dos.png",
+                  Container(
+                    constraints: BoxConstraints(maxWidth: 800),
+                    child: ExtendedImage.network(
+                      "https://i.ibb.co/bswZCTK/dos.png",
 
-                    fit: BoxFit.fitWidth,
-                    cache: true,
+                      fit: BoxFit.fitWidth,
+                      cache: true,
 
-                    // borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                    //cancelToken: cancellationToken,
-                  ).px(0),
+                      // borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                      //cancelToken: cancellationToken,
+                    ).px(0),
+                  ),
                   12.heightBox,
-                  ExtendedImage.network(
-                    "https://i.ibb.co/V3ktswB/donts.png",
+                  Container(
+                    constraints: BoxConstraints(maxWidth: 800),
+                    child: ExtendedImage.network(
+                      "https://i.ibb.co/V3ktswB/donts.png",
 
-                    fit: BoxFit.fitWidth,
-                    cache: true,
+                      fit: BoxFit.fitWidth,
+                      cache: true,
 
-                    // borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                    //cancelToken: cancellationToken,
-                  ).px(0),
+                      // borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                      //cancelToken: cancellationToken,
+                    ).px(0),
+                  ),
                   SizedBox(height: 50),
                 ],
               ),
-            )
-          ],
-        ),
+            ),
+          ),
+        ))
+      ],
+    );
+  }
+
+  SingleChildScrollView movileView() {
+    return SingleChildScrollView(
+      controller: controller,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          MyHeader(
+            image: "https://i.ibb.co/7z3D8RX/doctor2.png",
+            isImage: true,
+            textTop: "Get to know",
+            textBottom: "About Covid-19.",
+            offset: offset,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Symptoms",
+                  style: kTitleTextstyle,
+                ),
+                SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    SymptomCard(
+                      image: "assets/images/headache.png",
+                      title: "Headache",
+                      isActive: true,
+                    ).expand(),
+                    8.widthBox,
+                    SymptomCard(
+                      image: "assets/images/caugh.png",
+                      title: "Caugh",
+                    ).expand(),
+                    8.widthBox,
+                    SymptomCard(
+                      image: "assets/images/fever.png",
+                      title: "Fever",
+                    ).expand(),
+                  ],
+                ),
+                SizedBox(height: 20),
+                Text("Prevention", style: kTitleTextstyle),
+                SizedBox(height: 20),
+                ExtendedImage.network(
+                  "https://i.ibb.co/bswZCTK/dos.png",
+
+                  fit: BoxFit.fitWidth,
+                  cache: true,
+
+                  // borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                  //cancelToken: cancellationToken,
+                ).px(0),
+                12.heightBox,
+                ExtendedImage.network(
+                  "https://i.ibb.co/V3ktswB/donts.png",
+
+                  fit: BoxFit.fitWidth,
+                  cache: true,
+
+                  // borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                  //cancelToken: cancellationToken,
+                ).px(0),
+                SizedBox(height: 50),
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
