@@ -1,4 +1,4 @@
-import 'package:covid_19/business/historyModel.dart';
+import 'package:covid_19/tracker/business/historyModel.dart';
 import 'package:covid_19/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';

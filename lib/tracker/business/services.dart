@@ -1,5 +1,5 @@
 import 'package:bot_toast/bot_toast.dart';
-import 'package:covid_19/business/latestmodel.dart';
+import 'package:covid_19/tracker/business/latestmodel.dart';
 
 import 'package:http/http.dart' as http;
 
