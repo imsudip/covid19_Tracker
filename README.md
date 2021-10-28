@@ -1,3 +1,4 @@
+
 # Covid 19 Tracker -Flutter
 
 Its a app to track cases of covid-19 in India and All the Indian states.
@@ -20,7 +21,7 @@ Contains all the historical data for each state from the start of the pandemic.
 Fully responsive UI.
 Checkout the Website [here](https://imsudip.github.io/covid19_Tracker/#/)
 ## Direct APK download Link
-<a href="https://github.com/imsudip/covid19_Tracker/raw/main/Covid19%20Tracker_1.1.0.apk" title="Download now"><img src="https://icon-library.net//images/apk-icon/apk-icon-1.jpg" width="100" />Download</a>
+<a href="https://github.com/imsudip/covid19_Tracker/raw/main/Covid19%20Tracker_1.1.0.apk" title="Download now"><img src="https://i.ibb.co/kHy4pMz/download.png" alt="download" border="0"></a>
 ***
 
 
