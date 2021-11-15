@@ -73,9 +73,29 @@ class _ChartViewState extends State<ChartView> {
           values: yearList,
 
           onChanged: (slider.SfRangeValues values) {
-            setState(() {
-              yearList = values;
-            });
+            //ignore date between 2021-6-30 to 2021-8-01
+            print(values.start);
+            print(values.end);
+            if (values.start.isAfter(DateTime(2021, 6, 30)) &&
+                values.start.isBefore(DateTime(2021, 7, 31))) {
+              print("in else");
+              var newStart = DateTime(2021, 8, 1);
+              var newValues = slider.SfRangeValues(newStart, values.end);
+              setState(() {
+                yearList = newValues;
+              });
+            } else if (values.end.isBefore(DateTime(2021, 8, 1)) &&
+                values.end.isAfter(DateTime(2021, 7, 01))) {
+              var newEnd = DateTime(2021, 6, 30);
+              var newValues = slider.SfRangeValues(values.start, newEnd);
+              setState(() {
+                yearList = newValues;
+              });
+            } else {
+              setState(() {
+                yearList = values;
+              });
+            }
           },
           enableTooltip: true,
           tooltipTextFormatterCallback:
@@ -92,7 +112,8 @@ class _ChartViewState extends State<ChartView> {
 
       primaryXAxis: DateTimeAxis(
           majorGridLines: MajorGridLines(width: 0),
-          interval: 2.5,
+          //intervalType: DateTimeIntervalType.months,
+          //  interval: 2.5,
           rangePadding: ChartRangePadding.auto,
           associatedAxisName: "date"),
       primaryYAxis: NumericAxis(

@@ -3,6 +3,7 @@
 *.log
 *.pyc
 *.swp
+*.jks
 .DS_Store
 .atom/
 .buildlog/
@@ -29,6 +30,8 @@
 .pub-cache/
 .pub/
 /build/
+
+/android/key.properties
 
 # Web related
 lib/generated_plugin_registrant.dart

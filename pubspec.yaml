@@ -28,8 +28,8 @@ dependencies:
   http: ^0.13.1
   intl: ^0.17.0
   menu_button: ^1.4.2+1
-  syncfusion_flutter_charts: ^19.1.57+1
-  syncfusion_flutter_sliders: ^19.1.57-beta
+  syncfusion_flutter_charts: ^19.3.53
+  syncfusion_flutter_sliders: ^19.3.53
   extended_image: ^4.0.1
   velocity_x: ^3.0.0
 
