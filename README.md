@@ -32,4 +32,7 @@ Open the project in vscode
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/imsudip/covid19_Tracker)
 ### Checkout the web version
 [Go to site](imsudip.github.io/covid19_tracker/)
+
+### Download the App
+<a href="https://github.com/imsudip/covid19_Tracker/raw/main/Covid19%20Tracker_1.1.0.apk" title="Download now"><img src="https://i.ibb.co/kHy4pMz/download.png" alt="download" border="0"></a>
 ## Made with <span style="color: #E81224;">&hearts;</span> in Flutter
