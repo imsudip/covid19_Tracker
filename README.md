@@ -30,5 +30,6 @@ Don't forget to give it a star ⭐
 
 Open the project in vscode
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/imsudip/bells)
-
+### Checkout the web version
+[Go to site](imsudip.github.io/covid19_tracker/)
 ## Made with <span style="color: #E81224;">&hearts;</span> in Flutter
