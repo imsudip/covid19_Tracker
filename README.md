@@ -29,7 +29,7 @@ If you are interested feel free to **Fork** and **Contribute** to the project.
 Don't forget to give it a star ⭐
 
 Open the project in vscode
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/imsudip/bells)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/imsudip/covid19_Tracker)
 ### Checkout the web version
 [Go to site](imsudip.github.io/covid19_tracker/)
 ## Made with <span style="color: #E81224;">&hearts;</span> in Flutter
